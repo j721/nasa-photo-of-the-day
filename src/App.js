@@ -3,6 +3,15 @@ import axios from 'axios';
 import "./App.css";
 
 function App() {
+  useEffect(()=>{
+  axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+  .then(response=>{
+    console.log(response);
+  })
+  .catch(error=>{
+    console.log('data failed to return', error);
+  })
+  },[])
   return (
     <div className="App">
       <p>
