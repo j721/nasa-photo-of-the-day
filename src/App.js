@@ -3,9 +3,11 @@ import axios from 'axios';
 import "./App.css";
 
 function App() {
+  const [space, setSpace]= useState({})
   useEffect(()=>{
   axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
   .then(response=>{
+    setSpace(response.data)
     console.log(response);
   })
   .catch(error=>{
