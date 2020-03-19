@@ -4,7 +4,7 @@ const NasaContent = props => {
     return (
       <div className="ContentFiller">
         <p>{props.date}</p>
-        <p>{props.explanation}</p>
+        <p className ="paragraphs">{props.explanation}</p>
       </div>
     );
   };
