@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <NasaHeader title={space.title} />
-      <NasaContent date={space.date} explanation={space.explanation} />
       <NasaImage image={space.hdurl} />
+      <NasaContent date={space.date} explanation={space.explanation} />
     </div>
   );
 }
