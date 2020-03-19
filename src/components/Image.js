@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const AppImage=(current)=>{
-return(
-    <AppImage>
-           <img src ={current.image} alt ='Fastest Galaxy'/> 
-    </AppImage>
-)
-}
+const NasaImage = props => {
+  return <img src={props.image} alt="View of Space" />;
+};
 
-export default AppImage; 
+export default NasaImage;
