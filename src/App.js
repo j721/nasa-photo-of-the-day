@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from "react";
 import axios from 'axios';
 import AppTitle from './components/Title';
+import AppImage from './components/Image';
 import "./App.css";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <AppTitle title={space.title} />
-      <SpaceImage image ={space.hdurl}/>
+      <AppImage image ={space.hdurl}/>
     </div>
   );
 }
