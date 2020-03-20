@@ -1,11 +1,15 @@
 import React,{useState} from "react";
 import { Button, Popover, PopoverHeader, PopoverBody } from "reactstrap";
+import { Jumbotron } from "reactstrap";
+// import styled from 'styled components';
 
 const NasaHeader = props => {
     const [popoverOpen, setPopoverOpen] = useState(false);
     const toggle = () => setPopoverOpen(!popoverOpen);
     return (
       <div className="HeaderContent">
+           <Jumbotron style={{height: "30vh"}}
+               style={{background: "black"}}>
          <h1>Nasa Photo of the Day</h1>
         <nav>
           <a href="#">Home</a>
@@ -29,6 +33,7 @@ const NasaHeader = props => {
             </Popover>
           </a>
         </nav>
+        </Jumbotron>
       <div className="TitleHolder">
         <h1>{props.title}</h1>
       </div>
