@@ -8,8 +8,7 @@ const NasaHeader = props => {
     const toggle = () => setPopoverOpen(!popoverOpen);
     return (
       <div className="HeaderContent">
-           <Jumbotron style={{height: "30vh"}}
-               style={{background: "black"}}>
+           <Jumbotron style={{background: "black"}}>
          <h1>Nasa Photo of the Day</h1>
         <nav>
           <a href="#">Home</a>

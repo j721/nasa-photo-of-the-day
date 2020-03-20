@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const SpaceImage = styled.img`
-  width: 56%;
-  border-radius: 7%;
+  width: 50%;
+  border-radius: 14%;
 `;
 
 const NasaImage = props => {
