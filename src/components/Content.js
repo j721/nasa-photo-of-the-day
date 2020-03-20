@@ -20,7 +20,6 @@ const NasaContent = props => {
             </CardBody>
           </Card>
         </Collapse>
-        {/* <p className="paragraphs">{props.explanation}</p> */}
       </div>
     </div>
   );
